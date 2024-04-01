@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.OWNER_NAME }}
           password: ${{ secrets.PACKAGE_TOKEN }}
           
-      - name: Build the Join-Bot Docker image
+      - name: Build the Ban-Shouter Docker image
         run: |
           docker build . --tag ghcr.io/brockbreacher/ban-shouter:latest
           docker push ghcr.io/brockbreacher/ban-shouter:latest
